@@ -1,0 +1,22 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Главная страница';
+    - let youAreUsingPug = true;
+    - let h1 = 'Главный заголовок';
+
+block content
+    .container-fluid 
+        header
+            .container 
+                include ./../components/bem-blocks/nav/nav.pug
+        section
+            .container
+                h1.title= h1
+                if youAreUsingPug
+                    p You are amazing
+                else
+                    p Get on it!
+                p.
+                    Pug is a terse and simple templating language with a
+                    strong focus on performance and powerful features.

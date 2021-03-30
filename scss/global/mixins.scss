@@ -1,3 +1,11 @@
+/* MEDIA QUERIES */
+
+@mixin media($min) {
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
 /* FONTS */
 
 /* CenturyGothic */

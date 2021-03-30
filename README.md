@@ -87,7 +87,7 @@ webpack.config.js - файл настроек для webpack.
 
 5.1 В файле gulpfile.js установить Current project name, прописав его в переменную themePath.
 
-5.2 В файле gulpfile.js оставить по умолчанию переменную let isDev = true в разделе Project build type (development or production). В этом случае будет создаваться не минифиированный js файл с sourcemap. При изменении isDev = false будет запускаться production версия сборки с минифицированным файлом js без sourcemap.
+5.2 В файле gulpfile.js оставить по умолчанию переменную let isDev = true в разделе Project build type (development or production). В этом случае будет создаваться не минифицированный js файл с sourcemap. При изменении isDev = false будет запускаться production версия сборки с минифицированным файлом js без sourcemap.
 
 5.3 Прописать ссылки на файлы css, js и fonts в файлах 
 src/layouts/head.pug и src/layouts/footer.pug соответственно. Ссылка должна иметь вид:

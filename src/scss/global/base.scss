@@ -14,10 +14,14 @@ body {
   font-weight: 400;
   font-style: normal;
   text-rendering: optimizelegibility;
-  background-color: #5d53c6; 
+  background-color: #fff; 
 }
-.wrapper{
+.wrapper,
+header{
   width: 100%;
+}
+header{
+  background-color: #5D53C6;
 }
 
 .container-fluid {

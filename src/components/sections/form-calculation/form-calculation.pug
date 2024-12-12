@@ -1,0 +1,16 @@
+section.form-calculation
+  .container 
+    .form-calculation_inner
+      .calculation__banner
+        span Наш менеджер ответит на все ваши вопросы!
+      form.calculation-form(action="#" method="post")
+        h1.calculation-form__title Оставьте свои контакты и мы расскажем о нас подробнее!
+        .calculation-form__field-group
+          label.calculation-form__label(for="name") Как к вам обращаться?
+          input.calculation-form__input#name(type="text" placeholder="Как к вам обращаться?")
+          input.calculation-form__input(type="tel" placeholder="7 (123) 456-78-90")
+          button.calculation-form__button Связаться с 
+        .calculation-form__note Заполняя форму, вы даете согласие на обработку своих персональных данных и соглашаетесь с 
+          a.calculation-form__link(href="#") Политикой конфиденциальности.
+          br
+          | *если предполагает происходит в день обращения

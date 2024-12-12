@@ -1,0 +1,178 @@
+.form-calculation {
+  width: 100%;
+  // height: 943px; ///!!!
+  margin-top: 4.4rem;
+  padding: 5rem 0;
+
+  background-image: url('../img/calculation__bg.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @supports (background-image: image-set(url('../img/calculation__bg.avif') 1x, url('../img/calculation__bg@2x.avif') 2x)) {
+    background-image: image-set(
+      url('../img/calculation__bg.avif') 1x,
+      url('../img/calculation__bg@2x.avif') 2x
+    );
+  }
+
+  // Fallback for browsers that do not support AVIF
+  @supports not (background-image: image-set(url('../img/calculation__bg.avif') 1x)) {
+    background-image: url('../img/calculation__bg.jpg');
+  }
+
+  // Retina for fallback
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @supports not (background-image: image-set(url('../img/calculation__bg.avif') 1x)) {
+      background-image: url('../img/calculation__bg@2x.jpg');
+    }
+  }
+
+  // background-image: image-set(
+  //   "../img/calculation__bg.avif" type("image/avif"),
+  //   "../img/calculation__bg.jpg" type("image/jpeg")
+  // );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &_inner {
+    display: flex;
+    justify-content: flex-end;
+
+    .calculation-form {
+      position: relative;
+      max-width: 54rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      border-radius: 0.8rem;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 15.5rem;
+        right: 27rem;
+        width: 49rem;
+        height: 45rem;
+        background: url("../img/icons/path.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    
+      &__title {
+        margin-bottom: 5.3rem;
+        font-size: 3.8rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.15;
+        color: var(--white_1);
+        text-shadow: 0 4px 28px rgba(255, 194, 6, .38);
+      }
+    
+      &__field-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+    
+      &__label {
+        font-size: 1.6rem;
+        color: var(--white_1);
+        margin-bottom: 0.8rem;
+      }
+    
+      &__input {
+        width: 32rem;
+        height: 6.4rem;
+        text-align: center;
+        padding: 2.3rem 2rem;
+        font-size: 2rem;
+        border: 0.1rem solid var(--gray_1);
+        border-radius: 0.5rem;
+        background: var(--white_1);
+        color: var(--black_1);
+    
+        &::placeholder {
+          color: var(--gray_2);
+        }
+      }
+    
+      &__button {
+        width: 32rem;
+        height: 6.4rem;
+        padding: 1rem 2rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--black_4);
+        border-radius: 0.5rem;
+        background-color: #ff5e03;
+        cursor: pointer;
+      }
+    
+      &__note {
+        font-size: 1.2rem;
+        color: var(--gray_2);
+        text-align: center;
+        margin-top: 2rem;
+    
+        a {
+          display: inline-block;
+          padding-bottom: 0.1rem;
+          border-bottom: 0.1rem solid;
+          color: var(--white_1);
+          opacity: .6;
+          cursor: pointer;
+        }
+      }
+    }
+    
+  }
+
+  .calculation__banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25.5rem;
+    height: 25.5rem;
+    margin-top: 24.5rem;
+    margin-right: 9.1rem;
+    padding: 0 3.0rem;
+    font-size: 2.0rem;
+    line-height: 1.3;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--yellow_1);
+    color: var(--black_1);
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      background-color: var(--yellow_1);
+    }
+
+    &::before {
+      top: 0.3rem;
+      left: -7.4rem;
+      width: 2.1rem;
+      height: 2.1rem;
+    }
+
+    &::after {
+      top: 1rem;
+      left: -3.1rem;
+      width: 3.9rem;
+      height: 3.9rem;
+    }
+  }
+
+}

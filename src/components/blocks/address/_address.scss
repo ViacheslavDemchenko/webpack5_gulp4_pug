@@ -1,0 +1,18 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+
+  span {
+
+    &:nth-of-type(1) {
+      color: var(--black_3);
+    }
+  }
+
+  b {
+    font-size: 1.5rem;
+    border-bottom: 1px dashed var(--black_2);
+    margin-right: 0.3rem;
+  }
+}

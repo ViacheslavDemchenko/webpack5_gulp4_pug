@@ -1,0 +1,50 @@
+// Переменные
+@import "./../scss/global/_variables";
+
+// Миксины
+@import "./../scss/global/_mixins";
+
+// Сброс дефолтных стилей браузера (дополнительный)
+@import "./../scss/global/_global";
+
+// Основные стили
+@import "./../scss/global/_base";
+
+// Размеры шрифтов повторяющихся элементов (h1, заголовки секций и т.д.)
+@import "./../scss/global/_typography";
+
+// Общие стили для кнопок
+@import "./../scss/global/_btns";
+
+// Общие стили для инпутов, чекбоксов и т.д.
+@import "./../scss/global/_inputs";
+
+// Общие стили для секций (паддинги и т.д.)
+@import "./../scss/global/_sections";
+
+// Плагины
+// @import "./../scss/libs/swiper-bundle.min"; // Слайдер
+// @import "./../scss/libs/swiper-bundle";
+
+// Хедер
+// @import "./../components/sections/header/_header";
+
+// Футер
+// @import "./../components/sections/footer/_footer";
+
+// Сайдбар
+// @import "./../components/sections/aside/_aside";
+
+// БЭМ-блоки
+@import "./../components/blocks/logo/_logo"; // Логотип
+@import "./../components/blocks/nav/_nav"; // Меню 
+// @import "./../components/blocks/contacts/_contacts"; // Контакты
+// @import "./../components/blocks/modal/_modal"; // Модалка
+@import "./../components/blocks/burger/_burger"; // Бургер
+@import "./../components/blocks/navbar/_navbar"; // Навбар (белый узкий блок вверху сайта)
+@import "./../components/blocks/address/_address"; // Адресс в шапке сайта
+
+// Секции
+@import "./../components/sections/main-block/_main-block"; // Основной блок
+@import "./../components/sections/show/_show"; // Блок на главной (В формате игрового шоу...)
+@import "./../components/sections/form-calculation/_form-calculation"; // блок с формой "Оставьте свои контакты и мы расскажем о нас подробнее!"

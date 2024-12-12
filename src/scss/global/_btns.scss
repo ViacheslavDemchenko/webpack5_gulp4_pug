@@ -1,0 +1,100 @@
+button {
+  border: none;
+  outline: none;
+}
+
+.btn-header {
+	min-width: 24rem;
+	padding: 2.1rem 2.8rem;
+	transform: perspective(1px) translateZ(0);
+	box-sizing: border-box;
+	animation: slide .9s infinite alternate;
+	display: inline-block;
+	margin: 5rem 0.5rem 0;
+	font-size: 1.8rem;
+	font-weight: 500;
+	text-align: center;
+	background-color: #ff5e03;
+	background-size: 110% auto, auto;
+	background-image: radial-gradient(ellipse at 27% 0, #FFF501, transparent 50%), linear-gradient(to bottom, #FF9901, #FF8C39 30%, #FFC701 96%, #FFE925);
+	box-shadow: 0 4px 0 #ff8a01, 0 1px 2px rgba(219, 79, 0, .3), 0 5px 4px rgba(212, 63, 0, .63), 0 24px 44px rgba(234, 28, 0, .4);
+  border-radius: 1.2rem;
+	color: var(--black_4);
+	position: relative;
+	z-index: 2;
+	overflow: hidden
+}
+
+.btn-header:hover, 
+.btn-header:focus,
+.btn-call:hover, 
+.btn-call:focus,
+.calculation-form__button:hover,
+.calculation-form__button:focus {
+	text-decoration: none;
+	background-size: 150% auto, auto;
+	background-image: radial-gradient(circle at 20% -25%, rgba(255, 245, 1, 0.8), transparent 70%), linear-gradient(to bottom, #FF9901, #FF8C39 30%, #FFC701 96%, #FFE925);
+	color: var(--black_4);
+}
+.btn-header:active,
+.btn-call:active {
+	transition-property: all;
+	transition-duration: .1s;
+	transition-timing-function: ease;
+	transform: translateY(0.4rem);
+	background-image: linear-gradient(to bottom, #FF9901, #FF8C39 30%, #FFC701 99%, #FFE925);
+	box-shadow: 0 3px 0 #ff8a01, 0 1px 2px rgba(219, 79, 0, .3), 0 24px 44px rgba(255, 190, 23, .4)
+}
+
+@keyframes slide {
+	to {
+		transform: scale(1.05)
+	}
+}
+
+.btn-call,
+.calculation-form__button {
+  padding: 1.5rem 3rem;
+  border-radius: 1.2rem;
+	color: var(--black_4);
+  background-image: radial-gradient(ellipse at 27% 0, #FFF501, transparent 50%), linear-gradient(to bottom, #FF9901, #FF8C39 30%, #FFC701 96%, #FFE925);
+	box-shadow: 0 4px 0 #ff8a01, 0 1px 2px rgba(219, 79, 0, .3), 0 5px 4px rgba(212, 63, 0, .63), 0 24px 44px rgba(234, 28, 0, .4);
+}
+
+.play-button {
+	position: relative;
+	width: 16rem;
+	height: 16rem;
+  margin-bottom: 13rem;
+	border-radius: 50%;
+	background-image: radial-gradient(142.23px at 27.33% 0%, #FFF501 0%, rgba(255, 199, 1, 0) 100%), linear-gradient(180deg, #FF9901 0%, #FF8C39 30.39%, #FFC701 97.24%);
+	box-shadow: 0 24px 44px rgba(0, 0, 0, .4), 0 1px 2px rgba(219, 79, 0, .3), 0 4px 0 #ff8a01;
+	cursor: pointer
+}
+
+.play-button:hover, 
+.play-button:focus {
+	background-image: radial-gradient(180px at 27.33% 0%, #FFF501 0%, rgba(255, 199, 1, 0) 100%), linear-gradient(180deg, #FF9901 0%, #FFBC39 30.39%, #FFD601 100%);
+	box-shadow: 0 24px 44px rgba(0, 0, 0, .4), 0 1px 2px rgba(219, 79, 0, .3), 0 3px 0 #ffa901
+}
+
+.play-button:active {
+	transition-property: all;
+	transition-duration: .1s;
+	transition-timing-function: ease;
+	background-image: linear-gradient(180deg, #FF9901 0%, #FF8C39 30.39%, #FFC701 97.24%);
+	box-shadow: none
+}
+
+.play-button:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 62px;
+	height: 62px;
+	transform: translate(-43%, -50%);
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iNjEiIHZpZXdCb3g9IjAgMCA1MyA2MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWx0ZXI9InVybCgjZmlsdGVyMF9kKSI+PHBhdGggZD0iTTQ5Ljc2OSAyNC40OTZDNTMuNzY5IDI2LjgwNTQgNTMuNzY5IDMyLjU3ODkgNDkuNzY5IDM0Ljg4ODNMOS4xNTM2NSA1OC4zMzc2QzUuMTUzNjUgNjAuNjQ3IDAuMTUzNjUzIDU3Ljc2MDIgMC4xNTM2NTQgNTMuMTQxNEwwLjE1MzY1NiA2LjI0Mjg0QzAuMTUzNjU2IDEuNjI0MDMgNS4xNTM2NiAtMS4yNjI3MiA5LjE1MzY2IDEuMDQ2NjhMNDkuNzY5IDI0LjQ5NloiIGZpbGw9IiMyODE4MTIiLz48L2c+PGRlZnM+PGZpbHRlciBpZD0iZmlsdGVyMF9kIiB4PSIwLjE1MzgwOSIgeT0iMC4yMzM4ODciIHdpZHRoPSI1Mi42MTU0IiBoZWlnaHQ9IjU5LjkxNjUiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIi8+PGZlT2Zmc2V0IGR5PSIxIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMSAwIDAgMCAwIDAuODk4MDM5IDAgMCAwIDAgMC4xMjU0OSAwIDAgMCAxIDAiLz48ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvdyIvPjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93IiByZXN1bHQ9InNoYXBlIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-position: center
+}

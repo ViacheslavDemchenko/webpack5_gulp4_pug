@@ -1,0 +1,18 @@
+.nav {
+  margin-left: 15rem;
+  
+  ul {
+    display: flex;
+
+    li {
+
+      &:not(:last-of-type) {
+        margin-right: 10rem;
+      }
+
+      a {
+        color: var(--black_3);
+      }
+    }
+  }
+}

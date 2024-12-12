@@ -1,0 +1,18 @@
+<svg
+  width="448"
+  height="411"
+  viewBox="0 0 448 411"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+<path
+    d="M1 323C1 323 5.34058e-05 410 98 410C167 410 201 334.366 201 164.266C201 -58.6345 435 -4.03449 444.8 44.1655"
+    stroke="white"
+    stroke-width="0.5"
+    stroke-miterlimit="10"
+  />
+<path
+    d="M439.9 41.9653L440.5 41.1653L444.6 43.7653L447 39.4653L447.8 39.9653L445 45.2653L439.9 41.9653Z"
+    fill="white"
+  />
+</svg>
